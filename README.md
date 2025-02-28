@@ -55,7 +55,7 @@
 
 ---
 
-###AI###
+### **AI** ###
 ### **Well-Formed Formula (WFF) in AI**  
 
 #### **Definition:**  
