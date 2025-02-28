@@ -1,4 +1,4 @@
-### **What is Organizational Development (OD)?**  
+### 1 **What is Organizational Development (OD)?**  
 
 **Organizational Development (OD)** is a systematic, planned process aimed at improving an organization's efficiency, adaptability, and overall performance. It focuses on developing people, processes, and culture through continuous learning, innovation, and strategic change.  
 
@@ -54,6 +54,44 @@
 - **Performance Appraisals** – Regular evaluation of employee performance.  
 
 ---
+
+###AI###
+### **Well-Formed Formula (WFF) in AI**  
+
+#### **Definition:**  
+A **Well-Formed Formula (WFF)** is a syntactically correct expression in **propositional logic** or **first-order logic (FOL)** that follows the formal grammar rules of the logical system. It ensures that logical statements are **structured correctly** so they can be processed by AI reasoning systems.
+
+---
+
+### **Characteristics of WFF:**  
+1. **Syntactically Correct** – Must follow the rules of logic formation.  
+2. **Logical Operators** – Uses AND (∧), OR (∨), NOT (¬), IMPLICATION (→), BICONDITIONAL (↔).  
+3. **Proper Parentheses Usage** – Ensures clarity in logical grouping.  
+4. **Well-Defined Variables & Quantifiers** (for FOL) – Uses ∀ (for all) and ∃ (there exists).  
+
+---
+
+### **Examples of WFF:**  
+✅ **Valid WFFs (Correct Form):**  
+- **Propositional Logic:** (P ∧ Q) → R  
+- **First-Order Logic:** ∀x (Human(x) → Mortal(x))  
+
+❌ **Invalid WFFs (Incorrect Form):**  
+- **P ∧ → Q** (Missing operand)  
+- **∀ Human → Mortal** (Incorrect quantifier usage)  
+
+---
+
+### **Role of WFF in AI**  
+- **Automated Reasoning** – Ensures AI correctly processes logical statements.  
+- **Knowledge Representation** – Used in **Expert Systems** and **Knowledge Bases**.  
+- **Machine Learning & NLP** – Helps in rule-based decision-making.  
+- **Theorem Proving** – Forms the basis for mathematical proofs in AI.  
+
+---
+
+### **Conclusion:**  
+A **Well-Formed Formula (WFF)** is a fundamental concept in AI and logic, ensuring that logical expressions are correctly structured for processing. It plays a crucial role in reasoning, decision-making, and automated theorem proving in AI systems.
 
 ## **Benefits of Organizational Development**  
 ✔ **Better Employee Engagement** – Motivated employees lead to higher productivity.  
