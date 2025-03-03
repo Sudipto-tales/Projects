@@ -1,3 +1,106 @@
+### **What is a Loader?**  
+
+A **loader** is a system software component that loads an executable program into memory and prepares it for execution. It is a part of the **operating system (OS)** and works closely with the **linker** to ensure the program runs correctly.  
+
+---
+
+## **🔹 Functions of a Loader**  
+
+1️⃣ **Loads the Program into Memory**  
+   - Reads the executable file from storage (HDD/SSD).  
+   - Allocates memory space in **RAM** for the program.  
+
+2️⃣ **Relocates the Program (If Needed)**  
+   - Adjusts memory addresses if the program is **not loaded at its preferred address**.  
+   - Uses relocation information provided by the **linker**.  
+
+3️⃣ **Resolves External References**  
+   - If the program depends on external libraries, the loader **links them dynamically**.  
+   - Ensures required system libraries (DLL files in Windows, shared libraries in Linux) are available.  
+
+4️⃣ **Initializes Execution**  
+   - Sets up the **stack and heap**.  
+   - Transfers control to the program's **entry point (main function)**.  
+
+---
+
+## **🔹 Types of Loaders**  
+
+### **1️⃣ Absolute Loader**  
+- Loads the program at a fixed memory address.  
+- No relocation is required.  
+- **Used in embedded systems and early computers.**  
+
+### **2️⃣ Relocating Loader**  
+- Adjusts the program’s addresses to fit in available memory.  
+- **Used in modern OS where memory locations vary.**  
+
+### **3️⃣ Dynamic Loader**  
+- Loads **parts of a program only when needed** (on demand).  
+- Commonly used for **shared libraries (DLL, .so files)**.  
+- **Example**: Loading a graphics library only when required in a game.  
+
+### **4️⃣ Bootstrap Loader (Bootloader)**  
+- Loads the OS into memory when the computer starts.  
+- **Example**: BIOS/UEFI loading Windows/Linux from disk.  
+
+---
+
+## **🔹 Steps of Loader Execution**  
+
+### **1️⃣ Loading Phase**
+   - The loader reads the executable file from disk.  
+   - It finds a suitable memory location in **RAM**.  
+
+### **2️⃣ Relocation Phase**
+   - If required, adjusts memory addresses in the program.  
+
+### **3️⃣ Linking Phase**
+   - Loads external libraries (if needed).  
+
+### **4️⃣ Execution Phase**
+   - Transfers control to the program's entry point (`main` function).  
+   - The program starts running.  
+
+---
+
+## **🔹 Example of Loader in Action**  
+
+### **Scenario: Running a C Program (`a.out`) in Linux**
+1️⃣ You compile a C program:  
+   ```sh
+   gcc program.c -o program
+   ```
+2️⃣ You run the program:  
+   ```sh
+   ./program
+   ```
+3️⃣ The **loader**:  
+   - Loads `program` into memory.  
+   - Links required libraries (e.g., `libc.so`).  
+   - Transfers control to `main()`.  
+
+---
+
+## **🔹 Difference Between Loader & Linker**  
+
+| Feature  | Loader | Linker |
+|----------|--------|--------|
+| **Purpose** | Loads program into memory | Combines object files & resolves symbols |
+| **Execution Time** | Happens at **runtime** | Happens at **compile-time or load-time** |
+| **Relocation** | Adjusts addresses in RAM | Prepares relocation data |
+| **Type** | Absolute, Relocating, Dynamic | Static, Dynamic |
+
+---
+
+## **🔹 Summary**  
+✅ **A loader is a system program that loads an executable into memory and starts execution.**  
+✅ **It performs relocation, linking, and memory allocation.**  
+✅ **Different types include absolute, relocating, dynamic, and bootstrap loaders.**  
+✅ **Works with the linker to ensure external libraries are available at runtime.**  
+
+Would you like an example of a loader implementation in assembly or C?
+
 ### 1 **What is Organizational Development (OD)?**  
 
 **Organizational Development (OD)** is a systematic, planned process aimed at improving an organization's efficiency, adaptability, and overall performance. It focuses on developing people, processes, and culture through continuous learning, innovation, and strategic change.  
