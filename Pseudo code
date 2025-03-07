@@ -1,0 +1,16 @@
+**Best First Search**
+Best-First Search(Graph, start, goal):
+    1. Create an empty priority queue (open list) and add the start node.
+    2. Create an empty set (closed list) to track visited nodes.
+    
+    3. While the open list is not empty:
+        a. Remove the node with the lowest heuristic value (best node) from the queue.
+        b. If this node is the goal, return the path.
+        c. Add this node to the closed list (mark as visited).
+        
+        d. For each neighbor of the current node:
+            i. If the neighbor is not in the closed list:
+                - Calculate the heuristic value h(n).
+                - Add the neighbor to the open list (priority queue).
+    
+    4. If the loop ends without finding the goal, return "No Path Found".
